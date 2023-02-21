@@ -97,6 +97,17 @@
 /// Uncomment for use with Nemo patch ExtendCashShopPreview
 //#define ENABLE_CASHSHOP_PREVIEW_PATCH
 
+/// Uncomment for use with Nemo patch ExtendOldCashShopPreview
+//#define ENABLE_OLD_CASHSHOP_PREVIEW_PATCH
+
+#if defined(_DEBUG) || defined(DEBUG)
+	#define DETAILED_LOADING_OUTPUT
+#endif
+
+/// Uncomment to forcibly disable the detailed loading output.
+/// This will noticeably decrease the boot time of the map server by not having to print so many status messages.
+//#undef DETAILED_LOADING_OUTPUT
+
 /**
  * No settings past this point
  **/
